@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Implementación - Phantom Shield</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/animations.css">
+
+    
+<style>
+    @media (max-width: 768px) {
+        .phase-card .cyber-card {
+            width: 100% !important;
+            margin-left: 0 !important;
+        }
+
+        .phase-card>div:first-child {
+            left: 30px !important;
+            transform: none !important;
+        }
+
+        section>div>div:nth-child(2)>div:first-child {
+            left: 30px !important;
+            transform: none !important;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="glitch" data-text="PHANTOM">PHANTOM</span>
+                <span class="shield-icon">⬡</span>
+                <span class="glitch" data-text="SHIELD">SHIELD</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="security_levels.html" class="nav-link">Niveles</a>
+                <a href="implementation.html" class="nav-link">Implementación</a>
+                <a href="services.html" class="nav-link">Servicios</a>
+                <a href="threat_model.html" class="nav-link">STRIDE</a>
+                <a href="contact.html" class="nav-link nav-cta">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+<section style="padding: 8rem 2rem 5rem; min-height: 100vh;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div class="section-header" style="text-align: center; margin-bottom: 5rem;">
+            <h1 class="glitch" data-text="PLAN DE IMPLEMENTACIÓN"
+                style="font-size: 4rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, var(--neon-purple), var(--neon-magenta)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                PLAN DE IMPLEMENTACIÓN
+            </h1>
+            <p style="font-size: 1.3rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
+                Fortalecimiento progresivo de tu postura de seguridad en tres fases estratégicas
+            </p>
+        </div>
+
+        <!-- Timeline -->
+        <div style="position: relative; padding: 2rem 0;">
+            <!-- Vertical Line -->
+            <div
+                style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--neon-cyan), var(--neon-purple), var(--neon-magenta)); box-shadow: 0 0 20px var(--neon-cyan); transform: translateX(-50%);">
+            </div>
+
+            
+            <div class="phase-card animate-fade-in delay-1"
+                style="position: relative; margin-bottom: 5rem;">
+                <!-- Phase Number Circle -->
+                <div
+                    style="position: absolute; left: 50%; top: 2rem; transform: translateX(-50%); width: 80px; height: 80px; border: 3px solid #00f0ff; border-radius: 50%; background: var(--bg-primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; color: #00f0ff; box-shadow: 0 0 30px #00f0ff; z-index: 10;">
+                    1
+                </div>
+
+                <!-- Content Card -->
+                <div class="cyber-card"
+                    style="width: calc(50% - 60px);  border-color: #00f0ff; margin-top: 6rem;">
+                    <div
+                        style="display: inline-block; background: #00f0ff; color: var(--bg-primary); padding: 0.5rem 1rem; border-radius: 5px; font-family: var(--font-display); font-weight: 600; margin-bottom: 1rem;">
+                        Mes 1
+                    </div>
+
+                    <h2
+                        style="color: #00f0ff; font-size: 1.8rem; margin-bottom: 1.5rem; text-shadow: 0 0 10px #00f0ff;">
+                        Evaluación Inicial y Adopción de Seguridad Esencial
+                    </h2>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #00f0ff; padding-bottom: 0.5rem;">
+                            Actividades
+                        </h3>
+                        <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                            
+                            <li style="margin-bottom: 0.5rem;">Evaluación de riesgos y análisis de presencia online</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Implementación del Nivel 1 de Seguridad</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Instalación de gestor de contraseñas (Bitwarden)</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Migración a ProtonMail</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Configuración de VPN (Mullvad)</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Capacitación en Signal y navegación segura</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #00f0ff; padding-bottom: 0.5rem;">
+                            Entregables
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #00f0ff; color: var(--text-secondary);">
+                                ✓ Informe de evaluación de riesgos
+                            </div>
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #00f0ff; color: var(--text-secondary);">
+                                ✓ Dispositivos configurados con herramientas Nivel 1
+                            </div>
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #00f0ff; color: var(--text-secondary);">
+                                ✓ Manual de usuario personalizado
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="phase-card animate-fade-in delay-2"
+                style="position: relative; margin-bottom: 5rem;">
+                <!-- Phase Number Circle -->
+                <div
+                    style="position: absolute; left: 50%; top: 2rem; transform: translateX(-50%); width: 80px; height: 80px; border: 3px solid #b400ff; border-radius: 50%; background: var(--bg-primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; color: #b400ff; box-shadow: 0 0 30px #b400ff; z-index: 10;">
+                    2
+                </div>
+
+                <!-- Content Card -->
+                <div class="cyber-card"
+                    style="width: calc(50% - 60px); margin-left: auto; border-color: #b400ff; margin-top: 6rem;">
+                    <div
+                        style="display: inline-block; background: #b400ff; color: var(--bg-primary); padding: 0.5rem 1rem; border-radius: 5px; font-family: var(--font-display); font-weight: 600; margin-bottom: 1rem;">
+                        Mes 2-3
+                    </div>
+
+                    <h2
+                        style="color: #b400ff; font-size: 1.8rem; margin-bottom: 1.5rem; text-shadow: 0 0 10px #b400ff;">
+                        Fortalecimiento de la Seguridad y Anonimato
+                    </h2>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #b400ff; padding-bottom: 0.5rem;">
+                            Actividades
+                        </h3>
+                        <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                            
+                            <li style="margin-bottom: 0.5rem;">Implementación del Nivel 2 de Seguridad</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Configuración de smartphone con GrapheneOS</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Setup de hotspot móvil con VPN</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Implementación de número anónimo (JMP.chat)</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Capacitación en Tails OS</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Revisión y ajuste de privacidad en redes sociales</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #b400ff; padding-bottom: 0.5rem;">
+                            Entregables
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #b400ff; color: var(--text-secondary);">
+                                ✓ Smartphone seguro configurado
+                            </div>
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #b400ff; color: var(--text-secondary);">
+                                ✓ Hotspot móvil operativo
+                            </div>
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #b400ff; color: var(--text-secondary);">
+                                ✓ Guía de comunicaciones anónimas
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="phase-card animate-fade-in delay-3"
+                style="position: relative; margin-bottom: 5rem;">
+                <!-- Phase Number Circle -->
+                <div
+                    style="position: absolute; left: 50%; top: 2rem; transform: translateX(-50%); width: 80px; height: 80px; border: 3px solid #ff00ff; border-radius: 50%; background: var(--bg-primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; color: #ff00ff; box-shadow: 0 0 30px #ff00ff; z-index: 10;">
+                    3
+                </div>
+
+                <!-- Content Card -->
+                <div class="cyber-card"
+                    style="width: calc(50% - 60px);  border-color: #ff00ff; margin-top: 6rem;">
+                    <div
+                        style="display: inline-block; background: #ff00ff; color: var(--bg-primary); padding: 0.5rem 1rem; border-radius: 5px; font-family: var(--font-display); font-weight: 600; margin-bottom: 1rem;">
+                        Mes 4+
+                    </div>
+
+                    <h2
+                        style="color: #ff00ff; font-size: 1.8rem; margin-bottom: 1.5rem; text-shadow: 0 0 10px #ff00ff;">
+                        Implementación de Seguridad Avanzada y Monitoreo Continuo
+                    </h2>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #ff00ff; padding-bottom: 0.5rem;">
+                            Actividades
+                        </h3>
+                        <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                            
+                            <li style="margin-bottom: 0.5rem;">Implementación del Nivel 3 de Seguridad</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Configuración de Qubes OS</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Contratación de monitoreo de dark web</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Establecimiento de plan de respuesta a incidentes</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Prueba de penetración inicial</li>
+                            
+                            <li style="margin-bottom: 0.5rem;">Capacitación en phishing e ingeniería social</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #ff00ff; padding-bottom: 0.5rem;">
+                            Entregables
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #ff00ff; color: var(--text-secondary);">
+                                ✓ Computadora de alta seguridad configurada
+                            </div>
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #ff00ff; color: var(--text-secondary);">
+                                ✓ Plan de respuesta a incidentes documentado
+                            </div>
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #ff00ff; color: var(--text-secondary);">
+                                ✓ Informes trimestrales de monitoreo
+                            </div>
+                            
+                            <div
+                                style="background: rgba(0, 0, 0, 0.3); padding: 0.8rem 1rem; border-radius: 5px; border-left: 3px solid #ff00ff; color: var(--text-secondary);">
+                                ✓ Informe anual de pruebas de penetración
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Summary -->
+        <div
+            style="margin-top: 5rem; text-align: center; padding: 3rem; background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(180, 0, 255, 0.1)); border-radius: 10px; border: 1px solid var(--neon-cyan);">
+            <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--neon-cyan);">
+                Implementación Completa
+            </h3>
+            <p
+                style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+                El plan completo de implementación toma aproximadamente 4 meses, con mejoras incrementales en cada fase.
+                Incluye evaluación inicial, configuración de dispositivos, capacitación personalizada y soporte
+                continuo.
+            </p>
+            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                <a href="services.html" class="cyber-btn">
+                    Ver Servicios
+                </a>
+                <a href="contact.html" class="cyber-btn cyber-btn-magenta">
+                    Iniciar Implementación
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    @media (max-width: 768px) {
+        .phase-card .cyber-card {
+            width: 100% !important;
+            margin-left: 0 !important;
+        }
+
+        .phase-card>div:first-child {
+            left: 30px !important;
+            transform: none !important;
+        }
+
+        section>div>div:nth-child(2)>div:first-child {
+            left: 30px !important;
+            transform: none !important;
+        }
+    }
+</style>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="neon-text">Phantom Shield</h3>
+                    <p>Protección invisible contra amenazas visibles</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="security_levels.html">Niveles de Seguridad</a></li>
+                        <li><a href="implementation.html">Plan de Implementación</a></li>
+                        <li><a href="services.html">Servicios Adicionales</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="threat_model.html">Modelo de Amenazas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p class="neon-text-cyan">Protección de Alto Perfil</p>
+                    <p>Consultoría Especializada</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Phantom Shield. Todos los derechos reservados.</p>
+                <p class="glitch-text">[ SISTEMA SEGURO ]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="static/js/effects.js"></script>
+    
+</body>
+
+</html>

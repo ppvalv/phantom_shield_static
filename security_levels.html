@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niveles de Seguridad - Phantom Shield</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/animations.css">
+
+    
+</head>
+
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="glitch" data-text="PHANTOM">PHANTOM</span>
+                <span class="shield-icon">⬡</span>
+                <span class="glitch" data-text="SHIELD">SHIELD</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="security_levels.html" class="nav-link">Niveles</a>
+                <a href="implementation.html" class="nav-link">Implementación</a>
+                <a href="services.html" class="nav-link">Servicios</a>
+                <a href="threat_model.html" class="nav-link">STRIDE</a>
+                <a href="contact.html" class="nav-link nav-cta">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+<section style="padding: 8rem 2rem 5rem; min-height: 100vh;">
+    <div style="max-width: 1400px; margin: 0 auto;">
+        <div class="section-header" style="text-align: center; margin-bottom: 5rem; position: relative;">
+            <h1 class="glitch" data-text="NIVELES DE SEGURIDAD"
+                style="font-size: 4rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                NIVELES DE SEGURIDAD
+            </h1>
+            <p style="font-size: 1.3rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
+                Tres capas de protección diseñadas para escalar según tus necesidades y perfil de riesgo
+            </p>
+        </div>
+
+        
+        <div class="level-card cyber-card animate-fade-in delay-1"
+            style="margin-bottom: 3rem; border-color: #00f0ff; border-width: 2px;">
+            <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <div style="font-size: 5rem;">🛡️</div>
+                <div style="flex: 1;">
+                    <div
+                        style="font-size: 0.9rem; color: var(--text-muted); font-family: var(--font-display); letter-spacing: 2px; margin-bottom: 0.5rem;">
+                        [ NIVEL 1 ]
+                    </div>
+                    <h2
+                        style="color: #00f0ff; font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 0 0 15px #00f0ff;">
+                        Seguridad Esencial
+                    </h2>
+                    <p style="font-size: 1.2rem; color: var(--text-secondary);">
+                        Base sólida de seguridad digital utilizando software y buenas prácticas
+                    </p>
+                </div>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #00f0ff;">
+                    <h3 style="color: #00f0ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Comunicaciones
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Signal y Threema para mensajería</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">ProtonMail o Tutanota para email</li>
+                        
+                    </ul>
+                </div>
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #00f0ff;">
+                    <h3 style="color: #00f0ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Navegación
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">VPN (Mullvad/ProtonVPN)</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Brave o Firefox con extensiones</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Tor Browser</li>
+                        
+                    </ul>
+                </div>
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #00f0ff;">
+                    <h3 style="color: #00f0ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Dispositivos
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Perfil de trabajo seguro Android/iOS</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Cifrado de disco completo</li>
+                        
+                    </ul>
+                </div>
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #00f0ff;">
+                    <h3 style="color: #00f0ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Contraseñas
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Gestor de contraseñas (Bitwarden/KeePassXC)</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Autenticación 2FA</li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+
+            
+            <div
+                style="margin-top: 2rem; padding: 1.5rem; background: rgba(0, 240, 255, 0.1); border-radius: 8px; border: 1px solid #00f0ff;">
+                <strong style="color: #00f0ff;">💡 Ideal para:</strong>
+                <span style="color: var(--text-secondary);"> Cualquier persona que busque mejorar su privacidad y
+                    seguridad digital básica</span>
+            </div>
+            
+        </div>
+        
+        <div class="level-card cyber-card animate-fade-in delay-2"
+            style="margin-bottom: 3rem; border-color: #b400ff; border-width: 2px;">
+            <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <div style="font-size: 5rem;">🔐</div>
+                <div style="flex: 1;">
+                    <div
+                        style="font-size: 0.9rem; color: var(--text-muted); font-family: var(--font-display); letter-spacing: 2px; margin-bottom: 0.5rem;">
+                        [ NIVEL 2 ]
+                    </div>
+                    <h2
+                        style="color: #b400ff; font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 0 0 15px #b400ff;">
+                        Seguridad Intermedia
+                    </h2>
+                    <p style="font-size: 1.2rem; color: var(--text-secondary);">
+                        Hardware especializado y medidas de anonimato contra adversarios sofisticados
+                    </p>
+                </div>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #b400ff;">
+                    <h3 style="color: #b400ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Hardware Dedicado
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Hotspot móvil con VPN</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Google Pixel con GrapheneOS</li>
+                        
+                    </ul>
+                </div>
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #b400ff;">
+                    <h3 style="color: #b400ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Anonimato
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Telefonía IP anónima (JMP.chat/MySudo)</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Tails OS desde USB</li>
+                        
+                    </ul>
+                </div>
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #b400ff;">
+                    <h3 style="color: #b400ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Redes Sociales
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Configuración de privacidad avanzada</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Uso de seudónimos</li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+
+            
+            <div
+                style="margin-top: 2rem; padding: 1.5rem; background: rgba(180, 0, 255, 0.1); border-radius: 8px; border: 1px solid #b400ff;">
+                <strong style="color: #b400ff;">💡 Ideal para:</strong>
+                <span style="color: var(--text-secondary);"> Empresarios, figuras públicas y personas con alto perfil
+                    que enfrentan amenazas dirigidas</span>
+            </div>
+            
+        </div>
+        
+        <div class="level-card cyber-card animate-fade-in delay-3"
+            style="margin-bottom: 3rem; border-color: #ff00ff; border-width: 2px;">
+            <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <div style="font-size: 5rem;">⚡</div>
+                <div style="flex: 1;">
+                    <div
+                        style="font-size: 0.9rem; color: var(--text-muted); font-family: var(--font-display); letter-spacing: 2px; margin-bottom: 0.5rem;">
+                        [ NIVEL 3 ]
+                    </div>
+                    <h2
+                        style="color: #ff00ff; font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 0 0 15px #ff00ff;">
+                        Seguridad Avanzada
+                    </h2>
+                    <p style="font-size: 1.2rem; color: var(--text-secondary);">
+                        Protección máxima contra ataques dirigidos y actores estatales
+                    </p>
+                </div>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #ff00ff;">
+                    <h3 style="color: #ff00ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Aislamiento
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Dispositivos burner de un solo uso</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Qubes OS en computadora dedicada</li>
+                        
+                    </ul>
+                </div>
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #ff00ff;">
+                    <h3 style="color: #ff00ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Servicios Proactivos
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Monitoreo de amenazas en dark web</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Pruebas de penetración periódicas</li>
+                        
+                    </ul>
+                </div>
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #ff00ff;">
+                    <h3 style="color: #ff00ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Seguridad Física
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Billeteras de hardware</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Almacenamiento en caja fuerte</li>
+                        
+                    </ul>
+                </div>
+                
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #ff00ff;">
+                    <h3 style="color: #ff00ff; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Respuesta
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Plan de respuesta a incidentes</li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+
+            
+            <div
+                style="margin-top: 2rem; padding: 1.5rem; background: rgba(255, 0, 255, 0.1); border-radius: 8px; border: 1px solid #ff00ff;">
+                <strong style="color: #ff00ff;">💡 Ideal para:</strong>
+                <span style="color: var(--text-secondary);"> Individuos de altísimo perfil que enfrentan amenazas de
+                    actores estatales o grupos de hackers avanzados</span>
+            </div>
+            
+        </div>
+        
+
+        <div
+            style="text-align: center; margin-top: 5rem; padding: 3rem; background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(180, 0, 255, 0.1)); border-radius: 10px;">
+            <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--neon-cyan);">
+                ¿No estás seguro qué nivel necesitas?
+            </h3>
+            <p
+                style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Realizamos una evaluación de riesgos personalizada para determinar el nivel de seguridad óptimo para tu
+                perfil
+            </p>
+            <a href="contact.html" class="cyber-btn cyber-btn-magenta">
+                Solicitar Evaluación
+            </a>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="neon-text">Phantom Shield</h3>
+                    <p>Protección invisible contra amenazas visibles</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="security_levels.html">Niveles de Seguridad</a></li>
+                        <li><a href="implementation.html">Plan de Implementación</a></li>
+                        <li><a href="services.html">Servicios Adicionales</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="threat_model.html">Modelo de Amenazas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p class="neon-text-cyan">Protección de Alto Perfil</p>
+                    <p>Consultoría Especializada</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Phantom Shield. Todos los derechos reservados.</p>
+                <p class="glitch-text">[ SISTEMA SEGURO ]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="static/js/effects.js"></script>
+    
+</body>
+
+</html>

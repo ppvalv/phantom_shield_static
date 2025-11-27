@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Amenazas STRIDE - Phantom Shield</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/animations.css">
+
+    
+</head>
+
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="glitch" data-text="PHANTOM">PHANTOM</span>
+                <span class="shield-icon">⬡</span>
+                <span class="glitch" data-text="SHIELD">SHIELD</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="security_levels.html" class="nav-link">Niveles</a>
+                <a href="implementation.html" class="nav-link">Implementación</a>
+                <a href="services.html" class="nav-link">Servicios</a>
+                <a href="threat_model.html" class="nav-link">STRIDE</a>
+                <a href="contact.html" class="nav-link nav-cta">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+<section style="padding: 8rem 2rem 5rem; min-height: 100vh;">
+    <div style="max-width: 1400px; margin: 0 auto;">
+        <div class="section-header" style="text-align: center; margin-bottom: 5rem;">
+            <h1 class="glitch" data-text="MODELO DE AMENAZAS STRIDE"
+                style="font-size: 4rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, var(--neon-cyan), var(--neon-magenta)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                MODELO DE AMENAZAS STRIDE
+            </h1>
+            <p
+                style="font-size: 1.3rem; color: var(--text-secondary); max-width: 900px; margin: 0 auto; line-height: 1.8;">
+                Análisis sistemático de amenazas para individuos de alto perfil utilizando el framework STRIDE de
+                Microsoft
+            </p>
+        </div>
+
+        <!-- Threat Profile -->
+        <div class="cyber-card"
+            style="margin-bottom: 4rem; border-color: var(--neon-cyan); background: linear-gradient(135deg, rgba(0, 240, 255, 0.05), rgba(180, 0, 255, 0.05));">
+            <h2 style="color: var(--neon-cyan); font-size: 2rem; margin-bottom: 1.5rem;">
+                Perfil del Individuo
+            </h2>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                Un empresario de alto perfil, con una gran fortuna, una presencia pública significativa y opiniones.
+                Este perfil lo convierte en un objetivo de alto valor para una amplia gama de adversarios, desde
+                ciberdelincuentes motivados financieramente hasta actores estatales con fines políticos o de espionaje.
+            </p>
+
+            <h3 style="color: var(--neon-cyan); font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2rem;">
+                Activos Críticos a Proteger
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                <div
+                    style="padding: 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 5px; border-left: 3px solid var(--neon-green);">
+                    <strong style="color: var(--neon-green);">💰 Financieros:</strong>
+                    <span style="color: var(--text-secondary);"> Cuentas bancarias, inversiones, criptomonedas</span>
+                </div>
+                <div
+                    style="padding: 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 5px; border-left: 3px solid var(--neon-purple);">
+                    <strong style="color: var(--neon-purple);">💬 Comunicaciones:</strong>
+                    <span style="color: var(--text-secondary);"> Emails, mensajes, llamadas</span>
+                </div>
+                <div
+                    style="padding: 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 5px; border-left: 3px solid var(--neon-orange);">
+                    <strong style="color: var(--neon-orange);">📊 Negocios:</strong>
+                    <span style="color: var(--text-secondary);"> Estrategias, M&A, propiedad intelectual</span>
+                </div>
+                <div
+                    style="padding: 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 5px; border-left: 3px solid var(--neon-cyan);">
+                    <strong style="color: var(--neon-cyan);">👤 Reputación:</strong>
+                    <span style="color: var(--text-secondary);"> Redes sociales, marca personal</span>
+                </div>
+                <div
+                    style="padding: 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 5px; border-left: 3px solid var(--neon-magenta);">
+                    <strong style="color: var(--neon-magenta);">🔒 Privacidad:</strong>
+                    <span style="color: var(--text-secondary);"> Localización, viajes, información familiar</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- STRIDE Threats -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 2rem;">
+            
+            <div class="threat-card cyber-card hover-lift animate-fade-in delay-1"
+                style="border-color: #00f0ff; border-width: 2px;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 70px; height: 70px; border: 3px solid #00f0ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; color: #00f0ff; box-shadow: 0 0 20px #00f0ff; font-family: var(--font-display);">
+                        S
+                    </div>
+                    <div>
+                        <h2
+                            style="color: #00f0ff; font-size: 1.8rem; margin-bottom: 0.3rem; text-shadow: 0 0 10px #00f0ff;">
+                            Spoofing
+                        </h2>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Suplantación de Identidad</p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #00f0ff; padding-bottom: 0.5rem;">
+                        ⚠️ Amenazas
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Phishing dirigido (spear phishing)</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Suplantación de cuentas de email</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Clonación de SIM (SIM swapping)</li>
+                        
+                    </ul>
+                </div>
+
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border: 1px solid #00f0ff;">
+                    <h3 style="color: #00f0ff; font-size: 1.2rem; margin-bottom: 1rem;">
+                        🛡️ Mitigaciones
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Autenticación de dos factores con YubiKey</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Protocolos de verificación fuera de banda</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">PIN de SIM con operador móvil</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="threat-card cyber-card hover-lift animate-fade-in delay-2"
+                style="border-color: #00ff41; border-width: 2px;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 70px; height: 70px; border: 3px solid #00ff41; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; color: #00ff41; box-shadow: 0 0 20px #00ff41; font-family: var(--font-display);">
+                        T
+                    </div>
+                    <div>
+                        <h2
+                            style="color: #00ff41; font-size: 1.8rem; margin-bottom: 0.3rem; text-shadow: 0 0 10px #00ff41;">
+                            Tampering
+                        </h2>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Manipulación de Datos</p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #00ff41; padding-bottom: 0.5rem;">
+                        ⚠️ Amenazas
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Modificación de comunicaciones</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Alteración de transacciones financieras</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Manipulación de documentos</li>
+                        
+                    </ul>
+                </div>
+
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border: 1px solid #00ff41;">
+                    <h3 style="color: #00ff41; font-size: 1.2rem; margin-bottom: 1rem;">
+                        🛡️ Mitigaciones
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Firmas digitales (PGP)</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Monitoreo de integridad de archivos</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Blockchain para transacciones críticas</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="threat-card cyber-card hover-lift animate-fade-in delay-3"
+                style="border-color: #b400ff; border-width: 2px;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 70px; height: 70px; border: 3px solid #b400ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; color: #b400ff; box-shadow: 0 0 20px #b400ff; font-family: var(--font-display);">
+                        R
+                    </div>
+                    <div>
+                        <h2
+                            style="color: #b400ff; font-size: 1.8rem; margin-bottom: 0.3rem; text-shadow: 0 0 10px #b400ff;">
+                            Repudiation
+                        </h2>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">No Repudio</p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #b400ff; padding-bottom: 0.5rem;">
+                        ⚠️ Amenazas
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Negación de acciones realizadas</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Falta de trazabilidad</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Disputas sobre comunicaciones</li>
+                        
+                    </ul>
+                </div>
+
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border: 1px solid #b400ff;">
+                    <h3 style="color: #b400ff; font-size: 1.2rem; margin-bottom: 1rem;">
+                        🛡️ Mitigaciones
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Registros de auditoría detallados</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Firmas digitales con hardware (YubiKey)</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Timestamps criptográficos</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="threat-card cyber-card hover-lift animate-fade-in delay-4"
+                style="border-color: #ff00ff; border-width: 2px;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 70px; height: 70px; border: 3px solid #ff00ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; color: #ff00ff; box-shadow: 0 0 20px #ff00ff; font-family: var(--font-display);">
+                        I
+                    </div>
+                    <div>
+                        <h2
+                            style="color: #ff00ff; font-size: 1.8rem; margin-bottom: 0.3rem; text-shadow: 0 0 10px #ff00ff;">
+                            Information Disclosure
+                        </h2>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Divulgación de Información</p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #ff00ff; padding-bottom: 0.5rem;">
+                        ⚠️ Amenazas
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Spyware (Pegasus)</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Interceptación de comunicaciones</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Robo de datos en reposo</li>
+                        
+                    </ul>
+                </div>
+
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border: 1px solid #ff00ff;">
+                    <h3 style="color: #ff00ff; font-size: 1.2rem; margin-bottom: 1rem;">
+                        🛡️ Mitigaciones
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Cifrado end-to-end (Signal)</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">GrapheneOS para móviles</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Qubes OS para aislamiento</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Cifrado de disco completo</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="threat-card cyber-card hover-lift animate-fade-in delay-5"
+                style="border-color: #ff6b00; border-width: 2px;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 70px; height: 70px; border: 3px solid #ff6b00; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; color: #ff6b00; box-shadow: 0 0 20px #ff6b00; font-family: var(--font-display);">
+                        D
+                    </div>
+                    <div>
+                        <h2
+                            style="color: #ff6b00; font-size: 1.8rem; margin-bottom: 0.3rem; text-shadow: 0 0 10px #ff6b00;">
+                            Denial of Service
+                        </h2>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Denegación de Servicio</p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #ff6b00; padding-bottom: 0.5rem;">
+                        ⚠️ Amenazas
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Ataques DDoS a infraestructura</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Bloqueo de cuentas críticas</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Ransomware</li>
+                        
+                    </ul>
+                </div>
+
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border: 1px solid #ff6b00;">
+                    <h3 style="color: #ff6b00; font-size: 1.2rem; margin-bottom: 1rem;">
+                        🛡️ Mitigaciones
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Protección DDoS en servicios críticos</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Copias de seguridad robustas (3-2-1)</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Redundancia de comunicaciones</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="threat-card cyber-card hover-lift animate-fade-in delay-6"
+                style="border-color: #ffd700; border-width: 2px;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 70px; height: 70px; border: 3px solid #ffd700; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; color: #ffd700; box-shadow: 0 0 20px #ffd700; font-family: var(--font-display);">
+                        E
+                    </div>
+                    <div>
+                        <h2
+                            style="color: #ffd700; font-size: 1.8rem; margin-bottom: 0.3rem; text-shadow: 0 0 10px #ffd700;">
+                            Elevation of Privilege
+                        </h2>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Elevación de Privilegios</p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid #ffd700; padding-bottom: 0.5rem;">
+                        ⚠️ Amenazas
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Explotación de vulnerabilidades</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Acceso no autorizado a sistemas</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Escalación de privilegios</li>
+                        
+                    </ul>
+                </div>
+
+                <div
+                    style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 8px; border: 1px solid #ffd700;">
+                    <h3 style="color: #ffd700; font-size: 1.2rem; margin-bottom: 1rem;">
+                        🛡️ Mitigaciones
+                    </h3>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 1.8;">
+                        
+                        <li style="margin-bottom: 0.5rem;">Principio de mínimo privilegio</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Qubes OS para compartimentación</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">Actualizaciones de seguridad automáticas</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Summary -->
+        <div
+            style="margin-top: 5rem; padding: 3rem; background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(180, 0, 255, 0.1)); border-radius: 10px; border: 1px solid var(--neon-cyan); text-align: center;">
+            <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--neon-cyan);">
+                Protección Integral contra Todas las Amenazas
+            </h3>
+            <p
+                style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+                Nuestro enfoque de seguridad por capas aborda sistemáticamente cada categoría de amenaza del modelo
+                STRIDE. Desde la autenticación multifactor hasta el aislamiento con Qubes OS, cada medida está diseñada
+                para proteger tus activos más valiosos.
+            </p>
+            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                <a href="security_levels.html" class="cyber-btn">
+                    Ver Niveles de Seguridad
+                </a>
+                <a href="contact.html" class="cyber-btn cyber-btn-magenta">
+                    Evaluación Personalizada
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="neon-text">Phantom Shield</h3>
+                    <p>Protección invisible contra amenazas visibles</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="security_levels.html">Niveles de Seguridad</a></li>
+                        <li><a href="implementation.html">Plan de Implementación</a></li>
+                        <li><a href="services.html">Servicios Adicionales</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="threat_model.html">Modelo de Amenazas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p class="neon-text-cyan">Protección de Alto Perfil</p>
+                    <p>Consultoría Especializada</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Phantom Shield. Todos los derechos reservados.</p>
+                <p class="glitch-text">[ SISTEMA SEGURO ]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="static/js/effects.js"></script>
+    
+</body>
+
+</html>

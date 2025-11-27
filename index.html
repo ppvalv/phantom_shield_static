@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Shield - Protección Cibernética de Alto Perfil</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/animations.css">
+
+    
+</head>
+
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="glitch" data-text="PHANTOM">PHANTOM</span>
+                <span class="shield-icon">⬡</span>
+                <span class="glitch" data-text="SHIELD">SHIELD</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="security_levels.html" class="nav-link">Niveles</a>
+                <a href="implementation.html" class="nav-link">Implementación</a>
+                <a href="services.html" class="nav-link">Servicios</a>
+                <a href="threat_model.html" class="nav-link">STRIDE</a>
+                <a href="contact.html" class="nav-link nav-cta">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+<!-- Hero Section -->
+<section class="hero-section"
+    style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+    <div class="grid-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.3;"></div>
+
+    <div style="max-width: 1200px; padding: 2rem; text-align: center; position: relative; z-index: 10;">
+        <div class="animate-fade-in">
+            <div
+                style="font-size: 1.2rem; color: var(--neon-cyan); font-family: var(--font-display); margin-bottom: 1rem; letter-spacing: 3px;">
+                [ SISTEMA DE PROTECCIÓN AVANZADA ]
+            </div>
+
+            <h1 class="glitch" data-text="PHANTOM SHIELD"
+                style="font-size: 5rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, var(--neon-cyan), var(--neon-magenta)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                PHANTOM SHIELD
+            </h1>
+
+            <p
+                style="font-size: 1.5rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto 3rem; line-height: 1.8;">
+                Protección invisible contra amenazas visibles. Ciberseguridad de nivel militar para individuos de alto
+                perfil.
+            </p>
+
+            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                <a href="security_levels.html" class="cyber-btn animate-slide-in-left">
+                    Niveles de Seguridad
+                </a>
+                <a href="contact.html" class="cyber-btn cyber-btn-magenta animate-slide-in-right">
+                    Consultoría Personalizada
+                </a>
+            </div>
+        </div>
+
+        <!-- Shield Icon -->
+        <div style="margin-top: 5rem; font-size: 8rem; opacity: 0.3; animation: float 4s ease-in-out infinite;">
+            ⬡
+        </div>
+    </div>
+</section>
+
+<!-- Security Levels Preview -->
+<section style="padding: 5rem 2rem; background: var(--bg-secondary);">
+    <div style="max-width: 1400px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h2 class="neon-text" style="font-size: 3rem; margin-bottom: 1rem;">
+                Tres Niveles de Protección
+            </h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+                Desde seguridad esencial hasta protección contra actores estatales
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+            
+            <div class="cyber-card hover-lift animate-scale-in delay-1"
+                style="border-color: #00f0ff;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
+                <h3 style="color: #00f0ff; margin-bottom: 1rem; text-shadow: 0 0 10px #00f0ff;">
+                    Nivel 1: Seguridad Esencial
+                </h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    Base sólida de seguridad digital utilizando software y buenas prácticas
+                </p>
+
+                <div style="border-top: 1px solid #00f0ff; padding-top: 1.5rem;">
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <strong style="color: #00f0ff;">Comunicaciones:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                            
+                            <li>Signal y Threema para mensajería</li>
+                            
+                            <li>ProtonMail o Tutanota para email</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <strong style="color: #00f0ff;">Navegación:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                            
+                            <li>VPN (Mullvad/ProtonVPN)</li>
+                            
+                            <li>Brave o Firefox con extensiones</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <a href="security_levels.html" class="cyber-btn"
+                    style="margin-top: 2rem; width: 100%; text-align: center; border-color: #00f0ff; color: #00f0ff;">
+                    Ver Detalles
+                </a>
+            </div>
+            
+            <div class="cyber-card hover-lift animate-scale-in delay-2"
+                style="border-color: #b400ff;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🔐</div>
+                <h3 style="color: #b400ff; margin-bottom: 1rem; text-shadow: 0 0 10px #b400ff;">
+                    Nivel 2: Seguridad Intermedia
+                </h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    Hardware especializado y medidas de anonimato contra adversarios sofisticados
+                </p>
+
+                <div style="border-top: 1px solid #b400ff; padding-top: 1.5rem;">
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <strong style="color: #b400ff;">Hardware Dedicado:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                            
+                            <li>Hotspot móvil con VPN</li>
+                            
+                            <li>Google Pixel con GrapheneOS</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <strong style="color: #b400ff;">Anonimato:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                            
+                            <li>Telefonía IP anónima (JMP.chat/MySudo)</li>
+                            
+                            <li>Tails OS desde USB</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <a href="security_levels.html" class="cyber-btn"
+                    style="margin-top: 2rem; width: 100%; text-align: center; border-color: #b400ff; color: #b400ff;">
+                    Ver Detalles
+                </a>
+            </div>
+            
+            <div class="cyber-card hover-lift animate-scale-in delay-3"
+                style="border-color: #ff00ff;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                <h3 style="color: #ff00ff; margin-bottom: 1rem; text-shadow: 0 0 10px #ff00ff;">
+                    Nivel 3: Seguridad Avanzada
+                </h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    Protección máxima contra ataques dirigidos y actores estatales
+                </p>
+
+                <div style="border-top: 1px solid #ff00ff; padding-top: 1.5rem;">
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <strong style="color: #ff00ff;">Aislamiento:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                            
+                            <li>Dispositivos burner de un solo uso</li>
+                            
+                            <li>Qubes OS en computadora dedicada</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <strong style="color: #ff00ff;">Servicios Proactivos:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                            
+                            <li>Monitoreo de amenazas en dark web</li>
+                            
+                            <li>Pruebas de penetración periódicas</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <a href="security_levels.html" class="cyber-btn"
+                    style="margin-top: 2rem; width: 100%; text-align: center; border-color: #ff00ff; color: #ff00ff;">
+                    Ver Detalles
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Implementation Timeline Preview -->
+<section style="padding: 5rem 2rem;">
+    <div style="max-width: 1400px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h2 class="neon-text-purple" style="font-size: 3rem; margin-bottom: 1rem;">
+                Implementación por Fases
+            </h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+                Un plan estructurado para fortalecer tu seguridad progresivamente
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+            
+            <div class="cyber-card animate-slide-in-bottom delay-1"
+                style="border-color: #00f0ff;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 60px; height: 60px; border: 2px solid #00f0ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; color: #00f0ff; box-shadow: 0 0 20px #00f0ff;">
+                        1
+                    </div>
+                    <div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Mes 1</div>
+                        <h3 style="color: #00f0ff; font-size: 1.2rem;">Fase 1</h3>
+                    </div>
+                </div>
+
+                <h4 style="margin-bottom: 1rem; color: var(--text-primary);">Evaluación Inicial y Adopción de Seguridad Esencial</h4>
+
+                <ul style="color: var(--text-secondary); padding-left: 1.5rem;">
+                    
+                    <li style="margin-bottom: 0.5rem;">Evaluación de riesgos y análisis de presencia online</li>
+                    
+                    <li style="margin-bottom: 0.5rem;">Implementación del Nivel 1 de Seguridad</li>
+                    
+                    <li style="margin-bottom: 0.5rem;">Instalación de gestor de contraseñas (Bitwarden)</li>
+                    
+                    
+                    <li style="color: #00f0ff;">+ 3 más...</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="cyber-card animate-slide-in-bottom delay-2"
+                style="border-color: #b400ff;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 60px; height: 60px; border: 2px solid #b400ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; color: #b400ff; box-shadow: 0 0 20px #b400ff;">
+                        2
+                    </div>
+                    <div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Mes 2-3</div>
+                        <h3 style="color: #b400ff; font-size: 1.2rem;">Fase 2</h3>
+                    </div>
+                </div>
+
+                <h4 style="margin-bottom: 1rem; color: var(--text-primary);">Fortalecimiento de la Seguridad y Anonimato</h4>
+
+                <ul style="color: var(--text-secondary); padding-left: 1.5rem;">
+                    
+                    <li style="margin-bottom: 0.5rem;">Implementación del Nivel 2 de Seguridad</li>
+                    
+                    <li style="margin-bottom: 0.5rem;">Configuración de smartphone con GrapheneOS</li>
+                    
+                    <li style="margin-bottom: 0.5rem;">Setup de hotspot móvil con VPN</li>
+                    
+                    
+                    <li style="color: #b400ff;">+ 3 más...</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="cyber-card animate-slide-in-bottom delay-3"
+                style="border-color: #ff00ff;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 60px; height: 60px; border: 2px solid #ff00ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; color: #ff00ff; box-shadow: 0 0 20px #ff00ff;">
+                        3
+                    </div>
+                    <div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Mes 4+</div>
+                        <h3 style="color: #ff00ff; font-size: 1.2rem;">Fase 3</h3>
+                    </div>
+                </div>
+
+                <h4 style="margin-bottom: 1rem; color: var(--text-primary);">Implementación de Seguridad Avanzada y Monitoreo Continuo</h4>
+
+                <ul style="color: var(--text-secondary); padding-left: 1.5rem;">
+                    
+                    <li style="margin-bottom: 0.5rem;">Implementación del Nivel 3 de Seguridad</li>
+                    
+                    <li style="margin-bottom: 0.5rem;">Configuración de Qubes OS</li>
+                    
+                    <li style="margin-bottom: 0.5rem;">Contratación de monitoreo de dark web</li>
+                    
+                    
+                    <li style="color: #ff00ff;">+ 3 más...</li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="implementation.html" class="cyber-btn cyber-btn-magenta">
+                Ver Plan Completo
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Threat Protection -->
+<section style="padding: 5rem 2rem; background: var(--bg-secondary);">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <h2 class="neon-text-green" style="font-size: 3rem; margin-bottom: 2rem;">
+            Protección Contra Amenazas Avanzadas
+        </h2>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="cyber-card hover-glow">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
+                <h3 style="color: var(--neon-cyan);">Spyware Pegasus</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">Protección contra el spyware más sofisticado
+                    del mundo</p>
+            </div>
+
+            <div class="cyber-card hover-glow">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔒</div>
+                <h3 style="color: var(--neon-purple);">Cifrado E2E</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">Comunicaciones completamente cifradas de
+                    extremo a extremo</p>
+            </div>
+
+            <div class="cyber-card hover-glow">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">👁️</div>
+                <h3 style="color: var(--neon-green);">Monitoreo Proactivo</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">Vigilancia continua de amenazas en la dark
+                    web</p>
+            </div>
+
+            <div class="cyber-card hover-glow">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛡️</div>
+                <h3 style="color: var(--neon-orange);">Aislamiento Total</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">Compartimentación de actividades con Qubes OS
+                </p>
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem;">
+            <a href="threat_model.html" class="cyber-btn">
+                Modelo de Amenazas STRIDE
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section
+    style="padding: 5rem 2rem; background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(180, 0, 255, 0.1));">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <h2
+            style="font-size: 3rem; margin-bottom: 2rem; background: linear-gradient(135deg, var(--neon-cyan), var(--neon-magenta)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+            ¿Listo para Proteger tu Privacidad?
+        </h2>
+
+        <p style="font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 3rem; line-height: 1.8;">
+            Consultoría personalizada para individuos de alto perfil. Implementación desde $80,000 MXN + soporte
+            continuo desde $15,000 MXN/mes.
+        </p>
+
+        <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+            <a href="services.html" class="cyber-btn">
+                Ver Servicios
+            </a>
+            <a href="contact.html" class="cyber-btn cyber-btn-magenta">
+                Contactar Ahora
+            </a>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="neon-text">Phantom Shield</h3>
+                    <p>Protección invisible contra amenazas visibles</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="security_levels.html">Niveles de Seguridad</a></li>
+                        <li><a href="implementation.html">Plan de Implementación</a></li>
+                        <li><a href="services.html">Servicios Adicionales</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="threat_model.html">Modelo de Amenazas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p class="neon-text-cyan">Protección de Alto Perfil</p>
+                    <p>Consultoría Especializada</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Phantom Shield. Todos los derechos reservados.</p>
+                <p class="glitch-text">[ SISTEMA SEGURO ]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="static/js/effects.js"></script>
+    
+</body>
+
+</html>

@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/animations.css">
 
+    <style>
+        .menu-toggle {
+            display: none;
+        }
+    </style>
     
 <style>
     @media (max-width: 768px) {
@@ -48,7 +53,11 @@
                 <span class="glitch" data-text="SHIELD">SHIELD</span>
             </a>
 
-            <div class="nav-links">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <div class="nav-links" id="navLinks">
                 <a href="index.html" class="nav-link">Inicio</a>
                 <a href="security_levels.html" class="nav-link">Niveles</a>
                 <a href="implementation.html" class="nav-link">Implementación</a>
@@ -388,6 +397,7 @@
 
     <!-- Scripts -->
     <script src="static/js/effects.js"></script>
+    <script src="static/js/mobile_menu.js"></script>
     
 </body>
 
